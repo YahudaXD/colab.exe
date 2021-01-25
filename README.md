@@ -19,4 +19,4 @@ and enter the password you set for root.
 
 > sudo su
 
-**Thanks for using my software. coded by Yahuda**
+**Thanks for using my software. coded by Yahuda & Caliban**
