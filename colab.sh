@@ -19,16 +19,16 @@ sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo adduser colab-exe chrome-remote-desktop
-sudo apt-get install wine-stable
-sudo apt-get install wine
+sudo apt-get install -y wine-stable
+sudo apt-get install -y wine
 sudo dpkg --print-foreign-architectures
 sudo dpkg --add-architecture i386
 sudo dpkg --print-foreign-architectures
 sudo wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
 sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
-sudo apt install --install-recommends winehq-stable
-sudo apt install wine32
+sudo apt install -y --install-recommends winehq-stable
+sudo apt install -y wine32
 } &> /dev/null &&
 printf "\nReady to use " >&2 ||
 printf "\nError Occured " >&2
